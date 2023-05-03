@@ -20,6 +20,7 @@ class FollowsController < ApplicationController
     follow.destroy!
 
     respond_to do |format|
+    
       # Set redirect status to `:see_other` (303) to force a `GET` request. 
       # Otherwise, some browsers will keep the method of the redirect as 
       # `DELETE`.
